@@ -12,6 +12,7 @@ function hatchTama() {
  document.getElementById("stomach").innerText= hunger;
  document.getElementById("happy").innerText= mood;
  document.getElementById("tamaAge").innerText= age;
+ document.getElementById('hatch').style.visibility = 'hidden';
   }
 
 function feedTama() {
