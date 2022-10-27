@@ -2,6 +2,8 @@
 var hunger = 0;
 var mood = 0;
 var age =  0;
+
+// Button setup
 document.getElementById('hungerBut').style.visibility = 'hidden';
 document.getElementById('happyBut').style.visibility = 'hidden';
 
