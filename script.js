@@ -8,7 +8,8 @@ var timeTillEvo = 65*60;
 
 
 function hatchTama() {
-document.getElementById("tama").src="baby.gif";
+ document.getElementById("tama").src="baby.gif";
  document.getElementById("stomach").innerText= hunger;
  document.getElementById("happy").innerText= mood;
+ document.getElementById("tamaAge").innerText= age;
   }
