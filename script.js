@@ -10,7 +10,9 @@ document.getElementById('happyBut').style.visibility = 'hidden';
 // hidden variables
 var timeTillEvo = 65*60;
 while (timeTillEvo > 0) {
+ setTimeout(1000);
  timeTillEvo--;
+ 
   if (timeTillEvo = 0) {
   document.getElementById("tama").src="child.gif";
    }
