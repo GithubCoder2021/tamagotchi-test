@@ -21,3 +21,11 @@ function feedTama() {
 }
  document.getElementById("stomach").innerText= hunger;
   }
+
+function cheerupTama() {
+ if (mood < 4) {
+  mood++;
+}
+ document.getElementById("happy").innerText= mood;
+  }
+
