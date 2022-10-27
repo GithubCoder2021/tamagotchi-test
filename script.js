@@ -1,6 +1,6 @@
 // main variables
-var hunger = 4;
-var mood = 4;
+var hunger = 0;
+var mood = 0;
 var age =  0;
 
 // hidden variables
