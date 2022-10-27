@@ -14,7 +14,7 @@ function hatchTama() {
  document.getElementById("tamaAge").innerText= age;
   }
 
-function hatchTama() {
+function feedTama() {
  if (hunger < 4) {
   hunger++;
 }
