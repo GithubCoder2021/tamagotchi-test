@@ -1,5 +1,11 @@
+// main variables
 var hunger = 4;
 var mood = 4;
+var age =  0;
+
+// hidden variables
+var timeTillEvo = 65*60;
+
 
 function hatchTama() {
 document.getElementById("tama").src="baby.gif";
