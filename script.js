@@ -15,7 +15,6 @@ while (timeTillEvo > 0) {
   document.getElementById("tama").src="child.gif";
    }
 }
-document.getElementById("tama").src="child.gif";
 
 function hatchTama() {
  document.getElementById("tama").src="baby.gif";
