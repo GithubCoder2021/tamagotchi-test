@@ -11,6 +11,9 @@ document.getElementById('happyBut').style.visibility = 'hidden';
 var timeTillEvo = 65*60;
 while (timeTillEvo > 0) {
  timeTillEvo--;
+  if (timeTillEvo = 0) {
+  document.getElementById("tama").src="child.gif";
+   }
 }
 document.getElementById("tama").src="child.gif";
 
