@@ -12,7 +12,7 @@ var timeTillEvo = 65*60;
 while (timeTillEvo > 0) {
  timeTillEvo--;
 }
-
+document.getElementById("tama").src="child.gif";
 
 function hatchTama() {
  document.getElementById("tama").src="baby.gif";
