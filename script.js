@@ -13,3 +13,10 @@ function hatchTama() {
  document.getElementById("happy").innerText= mood;
  document.getElementById("tamaAge").innerText= age;
   }
+
+function hatchTama() {
+ if (hunger < 4) {
+  hunger++;
+}
+ document.getElementById("stomach").innerText= hunger;
+  }
