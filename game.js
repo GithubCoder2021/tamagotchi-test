@@ -4,8 +4,9 @@ function cheerUpTama() {
  document.getElementById("tama").src="leftorright.gif";
  document.getElementById('left').style.visibility = 'visible';
  document.getElementById('right').style.visibility = 'visible';
+}
 
- function leftTama() {
+function leftTama() {
   var leftOrRight = 1;
   if (correctDirection == leftOrRight) {
    document.getElementById("tama").src="leftleft.gif";
@@ -60,4 +61,3 @@ function cheerUpTama() {
 
 
  }
-}
