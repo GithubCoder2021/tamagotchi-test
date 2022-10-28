@@ -7,7 +7,7 @@ var age =  0;
 document.getElementById('hungerBut').style.visibility = 'hidden';
 document.getElementById('happyBut').style.visibility = 'hidden';
 
-// hidden variables
+// evolution sequence
 var timeTillEvo = 65*60;
 while (timeTillEvo > 0) {
  setTimeout(1000);
