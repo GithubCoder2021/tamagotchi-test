@@ -60,7 +60,7 @@ function feedTama() {
 
 
 function cheerUpTama() {
-  var correctDirection = Math.floor(Math.random() * (2 - 1 + 1)) + 1
+  var correctDirection = Math.floor(Math.random() * 2 + 1);
   
  document.getElementById("tama").src="leftorright.gif";
  document.getElementById('left').style.visibility = 'visible';
