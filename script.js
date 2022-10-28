@@ -72,13 +72,13 @@ function leftTama() {
    document.getElementById("tama").src="leftleft.gif";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-   const correct = setTimeout(correctChoice, 2000);
+   const correct = setTimeout(correctChoice, 1000);
     }
   else {
   document.getElementById("tama").src="rightleft.gif";
   document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-  const wrong = setTimeout(wrongChoice, 2000);
+  const wrong = setTimeout(wrongChoice, 1000);
    }
 
 
