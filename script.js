@@ -84,7 +84,7 @@ function leftTama() {
   document.getElementById("happy").innerText= mood;
  }
 } else {
-  document.getElementById("tama").src="rightleft.gif";
+  document.getElementById("tama").src="leftright.gif";
    document.getElementById('left').style.visibility = 'hidden';
   document.getElementById('right').style.visibility = 'hidden';
   setTimeout(1000);
