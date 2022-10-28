@@ -71,7 +71,7 @@ function cheerUpTama() {
 
 function leftTama() {
   if (correctDirection == 0) {
-   document.getElementById("tama").src="leftleft.gif";
+   document.getElementById("tama").src="leftleft.png";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
 document.getElementById('hungerBut').style.visibility = 'visible';
