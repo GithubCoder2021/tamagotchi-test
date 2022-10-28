@@ -38,6 +38,8 @@ function rightChoice() {
 }
 function normalBaby() {
  document.getElementById("tama").src="baby.gif";
+  document.getElementById('hungerBut').style.visibility = 'visible';
+ document.getElementById('happyBut').style.visibility = 'visible';
 }
   
 function hatchTama() {
@@ -65,6 +67,8 @@ function cheerUpTama() {
  document.getElementById("tama").src="leftorright.gif";
  document.getElementById('left').style.visibility = 'visible';
  document.getElementById('right').style.visibility = 'visible';
+  document.getElementById('hungerBut').style.visibility = 'hidden';
+ document.getElementById('happyBut').style.visibility = 'hidden';
 }
 
 function leftTama() {
