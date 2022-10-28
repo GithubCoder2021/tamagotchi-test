@@ -1,4 +1,3 @@
-//game
 function cheerUpTama() {
   var correctDirection = Math.floor(Math.random() * 2) + 1;
   
@@ -7,8 +6,8 @@ function cheerUpTama() {
  document.getElementById('right').style.visibility = 'visible';
 
  function leftTama() {
-  var leftOrRight = 1
-  if (correctDirection = 1) {
+  var leftOrRight = 1;
+  if (correctDirection == leftOrRight) {
    document.getElementById("tama").src="leftleft.gif";
    document.getElementById('left').style.visibility = 'hidden';
    document.getElementById('right').style.visibility = 'hidden';
@@ -19,9 +18,9 @@ function cheerUpTama() {
    if (mood < 4) {
     mood++;
     document.getElementById("happy").innerText= mood;
- }
-} 
-  else {
+   }
+ 
+} else {
    document.getElementById("tama").src="rightleft.gif";
    document.getElementById('left').style.visibility = 'hidden';
    document.getElementById('right').style.visibility = 'hidden';
@@ -31,11 +30,12 @@ function cheerUpTama() {
    document.getElementById("tama").src="baby.gif";
    document.getElementById("happy").innerText= mood;
 }
+ }
 
  
   function rightTama() {
-   var leftOrRight = 2
-   if (correctDirection = 2) {
+   var leftOrRight = 2;
+   if (correctDirection == leftOrRight) {
    document.getElementById("tama").src="rightright.gif";
    document.getElementById('left').style.visibility = 'hidden';
    document.getElementById('right').style.visibility = 'hidden';
@@ -46,7 +46,7 @@ function cheerUpTama() {
    if (mood < 4) {
     mood++;
     document.getElementById("happy").innerText= mood;
- }
+    }
 } else {
    document.getElementById("tama").src="leftright.gif";
    document.getElementById('left').style.visibility = 'hidden';
@@ -56,8 +56,8 @@ function cheerUpTama() {
    setTimeout(2000);
    document.getElementById("tama").src="baby.gif";
    document.getElementById("happy").innerText= mood;
- 
-  }
+   }
 
 
  }
+}
