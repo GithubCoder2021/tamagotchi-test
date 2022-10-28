@@ -16,7 +16,7 @@ while (timeTillEvo > 0) {
  setInterval(function() {
   timeTillEvo--;
 }, 1000)
-  if (timeTillEvo = 0) {
+  if (timeTillEvo == 0) {
   document.getElementById("tama").src="child.gif";
    }
 }
