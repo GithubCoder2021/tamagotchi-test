@@ -76,7 +76,7 @@ function leftTama() {
    document.getElementById("tama").src="leftleft.gif";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-   const correct = setTimeout(correctChoice, 1000);
+   const correct = setTimeout(rightChoice, 1000);
     }
   else {
   document.getElementById("tama").src="rightleft.gif";
@@ -94,7 +94,7 @@ function rightTama() {
    document.getElementById("tama").src="rightright.gif";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-   const correct = setTimeout(correctChoice, 1000);
+   const correct = setTimeout(rightChoice, 1000);
     }
   else {
   document.getElementById("tama").src="leftright.gif";
