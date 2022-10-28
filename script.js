@@ -68,7 +68,7 @@ function cheerUpTama() {
  document.getElementById('right').style.visibility = 'visible';
 }
 
-function left() {
+function leftTama() {
   if (correctDirection == 1) {
    document.getElementById("tama").src="leftleft.gif";
    const correct = setTimeout(correctAnswer, 2000);
