@@ -42,3 +42,9 @@ function cheerupTama() {
  document.getElementById("happy").innerText= mood;
   }
 
+
+// game setup
+
+var correctDirection = Math.floor(Math.random() * 2) + 1;
+
+
