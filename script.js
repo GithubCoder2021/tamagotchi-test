@@ -60,7 +60,7 @@ function feedTama() {
 
 
 function cheerUpTama() {
-  var correctDirection = Math.floor(Math.random() * 2 + 1);
+  var correctDirection = Math.floor(Math.random() * 2);
   
  document.getElementById("tama").src="leftorright.gif";
  document.getElementById('left').style.visibility = 'visible';
@@ -68,7 +68,7 @@ function cheerUpTama() {
 }
 
 function leftTama() {
-  if (correctDirection == 1) {
+  if (correctDirection == 0) {
    document.getElementById("tama").src="leftleft.gif";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
@@ -86,7 +86,7 @@ function leftTama() {
 
  
 function rightTama() {
-  if (correctDirection == 2) {
+  if (correctDirection == 1) {
    document.getElementById("tama").src="rightright.gif";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
