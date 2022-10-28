@@ -3,7 +3,6 @@ var hunger = 0;
 var mood = 0;
 var age =  0;
 var correctDirection = 0;
-var leftOrRight = 0;
 
 // Button setup
 document.getElementById('hungerBut').style.visibility = 'hidden';
@@ -14,14 +13,34 @@ document.getElementById('right').style.visibility = 'hidden';
 // evolution sequence
 var timeTillEvo = 65*60;
 while (timeTillEvo > 0) {
- setTimeout(1000);
- timeTillEvo--;
- 
+ setInterval(function() {
+  timeTillEvo--;
+}, 1000)
   if (timeTillEvo = 0) {
   document.getElementById("tama").src="child.gif";
    }
 }
+function wrongChoice() {
+    document.getElementById("tama").src="AngryShiro.gif";
+    document.getElementById('left').style.visibility = 'hidden';
+    document.getElementById('right').style.visibility = 'hidden';
+    const backToBaby = setTimeout(normalBaby, 2000);
+}
 
+function rightChoice() {
+ document.getElementById("tama").src="happyshiro.gif";
+ document.getElementById('left').style.visibility = 'hidden';
+ document.getElementById('right').style.visibility = 'hidden';
+ const backToBaby = setTimeout(normalBaby, 2000);
+ if (mood < 4) {
+     mood++;
+     document.getElementById("happy").innerText= mood;
+    }
+}
+function normalBaby() {
+ document.getElementById("tama").src="baby.gif";
+}
+  
 function hatchTama() {
  document.getElementById("tama").src="baby.gif";
  document.getElementById("stomach").innerText= hunger;
@@ -49,58 +68,31 @@ function cheerUpTama() {
  document.getElementById('right').style.visibility = 'visible';
 }
 
-function leftTama() {
-  var leftOrRight = 1;
+function left() {
   if (correctDirection == 1) {
    document.getElementById("tama").src="leftleft.gif";
-   document.getElementById('left').style.visibility = 'hidden';
-   document.getElementById('right').style.visibility = 'hidden';
-   setTimeout(1000);
-   document.getElementById("tama").src="happy.gif";
-   setTimeout(2000);
-   document.getElementById("tama").src="baby.gif";
-   if (mood < 4) {
-    mood++;
-    document.getElementById("happy").innerText= mood;
-   }
- 
+   const correct = setTimeout(correctAnswer, 2000);
+    }
 } else {
-   document.getElementById("tama").src="rightleft.gif";
-   document.getElementById('left').style.visibility = 'hidden';
-   document.getElementById('right').style.visibility = 'hidden';
-   setTimeout(1000);
-   document.getElementById("tama").src="AngryShiro.gif";
-   setTimeout(2000);
-   document.getElementById("tama").src="baby.gif";
-   document.getElementById("happy").innerText= mood;
-}
+  document.getElementById("tama").src="rightleft.gif";
+   const wrong = setTimeout(wrongAnswer, 2000);
+   }
+
+
  }
 
  
 function rightTama() {
-  var leftOrRight = 2;
   if (correctDirection == 2) {
    document.getElementById("tama").src="rightright.gif";
-   document.getElementById('left').style.visibility = 'hidden';
-   document.getElementById('right').style.visibility = 'hidden';
-   setTimeout(1000);
-   document.getElementById("tama").src="happy.gif";
-   setTimeout(2000);
-   document.getElementById("tama").src="baby.gif";
-    if (mood < 4) {
-     mood++;
-     document.getElementById("happy").innerText= mood;
+   const correct = setTimeout(correctAnswer, 2000);
     }
 } else {
-   document.getElementById("tama").src="leftright.gif";
-   document.getElementById('left').style.visibility = 'hidden';
-   document.getElementById('right').style.visibility = 'hidden';
-   setTimeout(1000);
-   document.getElementById("tama").src="AngryShiro.gif";
-   setTimeout(2000);
-   document.getElementById("tama").src="baby.gif";
-   document.getElementById("happy").innerText= mood;
+  document.getElementById("tama").src="leftright.gif";
+   const wrong = setTimeout(wrongAnswer, 2000);
    }
 
 
  }
+
+
