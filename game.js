@@ -1,7 +1,8 @@
 //game
-function cheerupTama() {
+function cheerUpTama() {
   var correctDirection = Math.floor(Math.random() * 2) + 1;
-
+  
+ document.getElementById("tama").src="leftorright.gif";
  document.getElementById('left').style.visibility = 'visible';
  document.getElementById('right').style.visibility = 'visible';
 
