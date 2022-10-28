@@ -2,6 +2,8 @@
 var hunger = 0;
 var mood = 0;
 var age =  0;
+var correctDirection = 0;
+var leftOrRight = 0;
 
 // Button setup
 document.getElementById('hungerBut').style.visibility = 'hidden';
@@ -75,9 +77,9 @@ function leftTama() {
  }
 
  
-  function rightTama() {
-   var leftOrRight = 2;
-   if (correctDirection == leftOrRight) {
+function rightTama() {
+  var leftOrRight = 2;
+  if (correctDirection == leftOrRight) {
    document.getElementById("tama").src="rightright.gif";
    document.getElementById('left').style.visibility = 'hidden';
    document.getElementById('right').style.visibility = 'hidden';
@@ -85,9 +87,9 @@ function leftTama() {
    document.getElementById("tama").src="happy.gif";
    setTimeout(2000);
    document.getElementById("tama").src="baby.gif";
-   if (mood < 4) {
-    mood++;
-    document.getElementById("happy").innerText= mood;
+    if (mood < 4) {
+     mood++;
+     document.getElementById("happy").innerText= mood;
     }
 } else {
    document.getElementById("tama").src="leftright.gif";
