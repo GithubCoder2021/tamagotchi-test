@@ -46,5 +46,10 @@ function cheerupTama() {
 // game setup
 
 var correctDirection = Math.floor(Math.random() * 2) + 1;
+document.addEventListener("keyup", function(event) {
+    if (event.code === 'left') {
+         if (correctDirection = choice;
+    }
+});
 
 
