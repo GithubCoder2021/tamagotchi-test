@@ -6,6 +6,8 @@ var age =  0;
 // Button setup
 document.getElementById('hungerBut').style.visibility = 'hidden';
 document.getElementById('happyBut').style.visibility = 'hidden';
+document.getElementById('left').style.visibility = 'hidden';
+document.getElementById('right').style.visibility = 'hidden';
 
 // evolution sequence
 var timeTillEvo = 65*60;
@@ -36,38 +38,62 @@ function feedTama() {
   }
 
 function cheerupTama() {
- if (mood < 4) {
-  mood++;
-}
- document.getElementById("happy").innerText= mood;
-  }
+  var correctDirection = Math.floor(Math.random() * 2) + 1;
 
-
-// game setup
-
-var correctDirection = Math.floor(Math.random() * 2) + 1;
+document.getElementById('left').style.visibility = 'visible';
+document.getElementById('right').style.visibility = 'visible';
 
 function leftTama() {
  var leftOrRight = 1
  if (correctDirection = 1) {
+  document.getElementById("tama").src="leftleft.gif";
+  document.getElementById('left').style.visibility = 'hidden';
+  document.getElementById('right').style.visibility = 'hidden';
+  setTimeout(1000);
+  document.getElementById("tama").src="happy.gif";
+  setTimeout(2000);
   document.getElementById("tama").src="baby.gif";
   if (mood < 4) {
   mood++;
+  document.getElementById("happy").innerText= mood;
  }
 } else {
+  document.getElementById("tama").src="rightleft.gif";
+   document.getElementById('left').style.visibility = 'hidden';
+  document.getElementById('right').style.visibility = 'hidden';
+  setTimeout(1000);
   document.getElementById("tama").src="AngryShiro.gif";
+  setTimeout(2000);
+  document.getElementById("tama").src="baby.gif";
+  document.getElementById("happy").innerText= mood;
 }
 
  
- function leftTama() {
- var leftOrRight = 2
+ function rightTama() {
+   var leftOrRight = 2
  if (correctDirection = 2) {
+  document.getElementById("tama").src="rightright.gif";
+  document.getElementById('left').style.visibility = 'hidden';
+  document.getElementById('right').style.visibility = 'hidden';
+  setTimeout(1000);
+  document.getElementById("tama").src="happy.gif";
+  setTimeout(2000);
   document.getElementById("tama").src="baby.gif";
   if (mood < 4) {
   mood++;
+  document.getElementById("happy").innerText= mood;
  }
 } else {
+  document.getElementById("tama").src="rightleft.gif";
+   document.getElementById('left').style.visibility = 'hidden';
+  document.getElementById('right').style.visibility = 'hidden';
+  setTimeout(1000);
   document.getElementById("tama").src="AngryShiro.gif";
+  setTimeout(2000);
+  document.getElementById("tama").src="baby.gif";
+  document.getElementById("happy").innerText= mood;
+ 
 }
 
 
+ }
