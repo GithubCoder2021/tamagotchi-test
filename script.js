@@ -37,6 +37,8 @@ function feedTama() {
  document.getElementById("stomach").innerText= hunger;
   }
 
+
+//game
 function cheerupTama() {
   var correctDirection = Math.floor(Math.random() * 2) + 1;
 
