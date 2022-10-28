@@ -90,13 +90,13 @@ function rightTama() {
    document.getElementById("tama").src="rightright.gif";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-   const correct = setTimeout(correctAnswer, 2000);
+   const correct = setTimeout(correcChoice, 1000);
     }
   else {
   document.getElementById("tama").src="leftright.gif";
   document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-   const wrong = setTimeout(wrongAnswer, 2000);
+   const wrong = setTimeout(wrongChoice, 1000);
    }
 
 
