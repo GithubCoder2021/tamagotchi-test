@@ -20,7 +20,7 @@ var timeTillEvo = 65*60;
    }
 
 function wrongChoice() {
-    document.getElementById("tama").src="AngryShiro.gif";
+    document.getElementById("tama").src="AngerShiro.gif";
     document.getElementById('left').style.visibility = 'hidden';
     document.getElementById('right').style.visibility = 'hidden';
     const backToBaby = setTimeout(normalBaby, 2000);
@@ -60,7 +60,7 @@ function feedTama() {
 
 
 function cheerUpTama() {
-  var correctDirection = Math.floor(Math.random() * 2) + 1;
+  var correctDirection = Math.floor(Math.random() * (2 - 1 + 1)) + 1
   
  document.getElementById("tama").src="leftorright.gif";
  document.getElementById('left').style.visibility = 'visible';
@@ -72,13 +72,13 @@ function leftTama() {
    document.getElementById("tama").src="leftleft.gif";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-   const correct = setTimeout(correctAnswer, 2000);
+   const correct = setTimeout(correctChoice, 2000);
     }
   else {
   document.getElementById("tama").src="rightleft.gif";
   document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-  const wrong = setTimeout(wrongAnswer, 2000);
+  const wrong = setTimeout(wrongChoice, 2000);
    }
 
 
