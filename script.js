@@ -46,10 +46,28 @@ function cheerupTama() {
 // game setup
 
 var correctDirection = Math.floor(Math.random() * 2) + 1;
-document.addEventListener("keyup", function(event) {
-    if (event.code === 'left') {
-         if (correctDirection = choice;
-    }
-});
+
+function leftTama() {
+ var leftOrRight = 1
+ if (correctDirection = 1) {
+  document.getElementById("tama").src="baby.gif";
+  if (mood < 4) {
+  mood++;
+ }
+} else {
+  document.getElementById("tama").src="AngryShiro.gif";
+}
+
+ 
+ function leftTama() {
+ var leftOrRight = 2
+ if (correctDirection = 2) {
+  document.getElementById("tama").src="baby.gif";
+  if (mood < 4) {
+  mood++;
+ }
+} else {
+  document.getElementById("tama").src="AngryShiro.gif";
+}
 
 
