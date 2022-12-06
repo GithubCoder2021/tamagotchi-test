@@ -12,12 +12,14 @@ document.getElementById('right').style.visibility = 'hidden';
 
 // evolution sequence
 var timeTillEvo = 65*60;
- setInterval(function() {
+
+if (timeTillEvo == 0) {
+  document.getElementById("tama").src="child.gif";
+} else {
+   setInterval(function() {
   timeTillEvo--;
 }, 1000);
-  if (timeTillEvo == 0) {
-  document.getElementById("tama").src="child.gif";
-   }
+}
 
 function wrongChoice() {
     document.getElementById("tama").src="AngerShiro.gif";
@@ -38,6 +40,8 @@ function rightChoice() {
 }
 function normalBaby() {
  document.getElementById("tama").src="baby.gif";
+ document.getElementById('hungerBut').style.visibility = 'visible';
+ document.getElementById('happyBut').style.visibility = 'visible';
 }
   
 function hatchTama() {
@@ -75,16 +79,12 @@ function leftTama() {
    document.getElementById("tama").src="leftleft.png";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-document.getElementById('hungerBut').style.visibility = 'visible';
-   document.getElementById('happyBut').style.visibility = 'visible';
    const correct = setTimeout(rightChoice, 1000);
     }
   else {
   document.getElementById("tama").src="rightleft.gif";
   document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-   document.getElementById('hungerBut').style.visibility = 'visible';
-   document.getElementById('happyBut').style.visibility = 'visible';
   const wrong = setTimeout(wrongChoice, 1000);
    }
 
@@ -98,16 +98,12 @@ function rightTama() {
    document.getElementById("tama").src="rightright.gif";
    document.getElementById('right').style.visibility = 'hidden';
    document.getElementById('left').style.visibility = 'hidden';
-   document.getElementById('hungerBut').style.visibility = 'visible';
-   document.getElementById('happyBut').style.visibility = 'visible';
    const correct = setTimeout(rightChoice, 1000);
     }
   else {
   document.getElementById("tama").src="leftright.gif";
   document.getElementById('right').style.visibility = 'hidden';
   document.getElementById('left').style.visibility = 'hidden';
-  document.getElementById('hungerBut').style.visibility = 'visible';
-   document.getElementById('happyBut').style.visibility = 'visible';
    const wrong = setTimeout(wrongChoice, 1000);
    }
 
